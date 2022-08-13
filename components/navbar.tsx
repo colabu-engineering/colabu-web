@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 export const Navbar = () => {
     const [isNavOpen, setIsNavOpen] = useState(false);
@@ -14,10 +15,18 @@ export const Navbar = () => {
                 <div
                     className={`${isNavOpen ? "show-menu" : "hide-menu"} flex flex-col items-center justify-between min-h-[250px]`}
                 >
-                    <nav>Domů</nav>
-                    <nav>Produkt</nav>
-                    <nav>Kontakt</nav>
-                    <nav>Registrovat se</nav>
+                    <nav>
+                        <Link href="/">Domů</Link>
+                    </nav>
+                    <nav>
+                        <Link href="/product/product-buyer">Produkt</Link>
+                    </nav>
+                    <nav>
+                        <Link href="/#contact">Kontakt</Link>
+                    </nav>
+                    <nav className="flex justify-center items-center w-52 h-10 rounded-3xl bg-blue text-white">
+                        <Link href="http://live.colabu.cz/register">Registrovat se</Link>
+                    </nav>
                 </div>
 
                 <div className="flex w-full justify-end">
@@ -31,7 +40,7 @@ export const Navbar = () => {
                     </div>
 
                     <div
-                        className={`${isNavOpen ? "" : "hidden"} z-20`}
+                        className={`${isNavOpen ? "" : "hidden"} fixed z-20`}
                         onClick={() => setIsNavOpen((prev) => !prev)}
                     >
                         <svg
@@ -50,24 +59,30 @@ export const Navbar = () => {
                 </div>
             </section>
 
-            <section className="hidden md:flex w-full justify-between px-20 pt-5">
+            <section className="hidden md:flex md:w-full md:justify-between md:px-20 md:pt-5">
                 <div className="flex items-center">
                     <Image src="/colabu-logo.png" alt="Colabu logo" width="120" height="25"/>
                 </div>
 
                 <div className="flex items-center">
                     <div className="mx-5">
-                        <nav>Domů</nav>
+                        <nav>
+                            <Link href="/">Domů</Link>
+                        </nav>
                     </div>
                     <div className="mx-5">
-                        <nav>Produkt</nav>
+                        <nav>
+                            <Link href="/product/product-buyer">Produkt</Link>
+                        </nav>
                     </div>
                     <div className="mx-5">
-                        <nav>Kontakt</nav>
+                        <nav>
+                            <Link href="/#contact">Kontakt</Link>
+                        </nav>
                     </div>
                     <div className="ml-5">
                         <nav className="flex justify-center items-center w-52 h-10 rounded-3xl bg-blue text-white">
-                            Registrovat se
+                            <Link href="http://live.colabu.cz/register">Registrovat se</Link>
                         </nav>
                     </div>
                 </div>

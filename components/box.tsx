@@ -26,7 +26,7 @@ export const Box: React.FC<BoxProps> = ({ iconPath, iconAlt, title, text, button
         </div>
         <div className="mt-5">
             <Link href={buttonLink}>
-                <div className="flex justify-center items-center w-52 h-10 rounded-3xl bg-grey">
+                <div className="flex justify-center items-center w-52 h-10 rounded-3xl bg-grey cursor-pointer">
                     {buttonText}
                 </div>
             </Link>
