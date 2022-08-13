@@ -7,9 +7,9 @@ export interface ButtonProps {
 
 export const Button: React.FC<ButtonProps> = ({ text, link }) => (
     <a
-        className=""
+        className="flex justify-center items-center w-52 h-10 rounded-3xl bg-blue text-white"
         href={link}
     >
-        {text}
+        <span>{text}</span>
     </a>
 );

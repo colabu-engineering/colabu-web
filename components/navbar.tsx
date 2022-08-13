@@ -5,8 +5,8 @@ export const Navbar = () => {
     const [isNavOpen, setIsNavOpen] = useState(false);
 
     return (
-        <header className="flex w-full p-5">
-            <section className="flex w-full md:hidden">
+        <header className="flex w-full">
+            <section className="flex w-full pt-5 px-5 md:hidden">
                 <div>
                     <Image src="/colabu-logo.png" alt="Colabu logo" width="120" height="25"/>
                 </div>
@@ -15,8 +15,7 @@ export const Navbar = () => {
                     className={`${isNavOpen ? "show-menu" : "hide-menu"} flex flex-col items-center justify-between min-h-[250px]`}
                 >
                     <nav>Domů</nav>
-                    <nav>Dodavatel</nav>
-                    <nav>Odběratel</nav>
+                    <nav>Produkt</nav>
                     <nav>Kontakt</nav>
                     <nav>Registrovat se</nav>
                 </div>
@@ -51,13 +50,26 @@ export const Navbar = () => {
                 </div>
             </section>
 
-            <section className="hidden md:flex">
-                <div className="flex">
-                    <nav>Domů</nav>
-                    <nav>Dodavatel</nav>
-                    <nav>Odběratel</nav>
-                    <nav>Kontakt</nav>
-                    <nav>Registrovat se</nav>
+            <section className="hidden md:flex w-full justify-between px-20 pt-5">
+                <div className="flex items-center">
+                    <Image src="/colabu-logo.png" alt="Colabu logo" width="120" height="25"/>
+                </div>
+
+                <div className="flex items-center">
+                    <div className="mx-5">
+                        <nav>Domů</nav>
+                    </div>
+                    <div className="mx-5">
+                        <nav>Produkt</nav>
+                    </div>
+                    <div className="mx-5">
+                        <nav>Kontakt</nav>
+                    </div>
+                    <div className="ml-5">
+                        <nav className="flex justify-center items-center w-52 h-10 rounded-3xl bg-blue text-white">
+                            Registrovat se
+                        </nav>
+                    </div>
                 </div>
             </section>
         </header>
