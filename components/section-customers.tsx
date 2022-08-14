@@ -10,7 +10,7 @@ export const SectionCustomers: React.FC = () => (
         <ItemWrapper>
             <h2 className="text-center text-2xl">Spolupracují s námi</h2>
         </ItemWrapper>
-        <div className="flex flex-col items-center lg:flex-row">
+        <div className="grid grid-cols-1 xl:grid-cols-3">
             <ItemMargin className="lg:mx-2.5">
                 <CustomerLogo
                     iconPath="/no-sacek-logo.png"

@@ -7,6 +7,7 @@ import { ItemWrapper } from "../../components/item-wrapper";
 import { ItemMargin } from "../../components/item-margin";
 import { SectionCustomers } from "../../components/section-customers";
 import { ItemTutorial } from "../../components/item-tutorial";
+import { ItemFeature } from "../../components/item-feature";
 
 const ProductBuyer: NextPage = () => {
     return (
@@ -38,8 +39,8 @@ const ProductBuyer: NextPage = () => {
                     <h2 className="text-center text-2xl">Jak to funguje?</h2>
                 </ItemWrapper>
 
-                <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-4">
-                    <ItemMargin className="mt-0 lg:mx-2.5">
+                <div className="grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-4">
+                    <ItemMargin className="lg:mx-2.5">
                         <ItemTutorial
                             title="1."
                             iconPath="/buyer-tutorial-1.png"
@@ -47,7 +48,7 @@ const ProductBuyer: NextPage = () => {
                             text="Zaregistrujete se do platformy Colabu."
                         />
                     </ItemMargin>
-                    <ItemMargin className="lg:mt-0 lg:mx-2.5 xl:mt-0">
+                    <ItemMargin className="lg:mx-2.5">
                         <ItemTutorial
                             title="2."
                             iconPath="/buyer-tutorial-2.png"
@@ -55,7 +56,7 @@ const ProductBuyer: NextPage = () => {
                             text="Vyberete dodavatele od kterého chcete objednat zboží."
                         />
                     </ItemMargin>
-                    <ItemMargin className="xl:mt-0 lg:mx-2.5">
+                    <ItemMargin className="lg:mx-2.5">
                         <ItemTutorial
                             title="3."
                             iconPath="/buyer-tutorial-3.png"
@@ -63,7 +64,7 @@ const ProductBuyer: NextPage = () => {
                             text="Vyberete si požadované zboží, vložíte jej do košíku a vytvoříte objednávku."
                         />
                     </ItemMargin>
-                    <ItemMargin className="xl:mt-0 lg:mx-2.5">
+                    <ItemMargin className="lg:mx-2.5">
                         <ItemTutorial
                             title="4."
                             iconPath="/buyer-tutorial-4.png"
@@ -82,6 +83,57 @@ const ProductBuyer: NextPage = () => {
                 <ItemWrapper>
                     <h2 className="text-center text-2xl">Proč používat Colabu?</h2>
                 </ItemWrapper>
+
+                <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3">
+                    <ItemMargin className="lg:mx-2.5">
+                        <ItemFeature
+                            title="Vytvoření objednávky"
+                            iconPath="/buyer-feature-1.png"
+                            iconAlt="Buyer feature icon"
+                            text="Díky Colabu dokážete objednávat zboží od různých dodavatelů na jednom místě*. Vytvoření objednávky je jednoduché a zvládnete jej na pár kliků."
+                        />
+                    </ItemMargin>
+                    <ItemMargin className="lg:mx-2.5">
+                        <ItemFeature
+                            title="Informace o dodavateli"
+                            iconPath="/buyer-feature-2.png"
+                            iconAlt="Buyer feature icon"
+                            text="U každého dodavatele si umíte prohlédnout informace týkající se objednávání zboží jako například částka minimální objednávky nebo závozové dny."
+                        />
+                    </ItemMargin>
+                    <ItemMargin className="lg:mx-2.5">
+                        <ItemFeature
+                            title="Seznam dodavatelů"
+                            iconPath="/buyer-feature-3.png"
+                            iconAlt="Buyer feature icon"
+                            text="Chcete najít své ověřené dodavatele nebo získat nové? V seznamu dodavatelů jednoduše naleznete toho, kterého potřebujete.*"
+                        />
+                    </ItemMargin>
+                    <ItemMargin className="lg:mx-2.5">
+                        <ItemFeature
+                            title="Historie objednávek"
+                            iconPath="/buyer-feature-4.png"
+                            iconAlt="Buyer feature icon"
+                            text="Všechny vaše objednávky si můžete zobrazit a spravovat v historii vašich objednávek. V historii objednávek také naleznete možnost stažení faktur."
+                        />
+                    </ItemMargin>
+                    <ItemMargin className="lg:mx-2.5">
+                        <ItemFeature
+                            title="Monitorování objednávek"
+                            iconPath="/buyer-feature-5.png"
+                            iconAlt="Buyer feature icon"
+                            text="Colabu nabízí sledování stavů vašich objednávek. Poté, co objednávku v Colabu vytvoříte, máte neustálý přehled o jejím stavu.*"
+                        />
+                    </ItemMargin>
+                    <ItemMargin className="lg:mx-2.5">
+                        <ItemFeature
+                            title="Chytrá pokladna"
+                            iconPath="/buyer-feature-6.png"
+                            iconAlt="Buyer feature icon"
+                            text="Objednejte zboží najednou nebo jednotlivě. Chytrá pokladna monitoruje splnění podmínek pro minimálnu objednávku a zobrazuje závozové dny.*"
+                        />
+                    </ItemMargin>
+                </div>
             </SectionWrapper>
 
             <SectionCustomers/>
