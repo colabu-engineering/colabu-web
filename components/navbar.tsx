@@ -4,6 +4,7 @@ import Link from "next/link";
 
 export const Navbar = () => {
     const [isNavOpen, setIsNavOpen] = useState(false);
+    const onLinkClick = () => setIsNavOpen(false);
 
     return (
         <header className="flex w-full">
@@ -15,16 +16,19 @@ export const Navbar = () => {
                 <div
                     className={`${isNavOpen ? "show-menu" : "hide-menu"} flex flex-col items-center justify-between min-h-[250px]`}
                 >
-                    <nav>
+                    <nav onClick={onLinkClick}>
                         <Link href="/">Domů</Link>
                     </nav>
-                    <nav>
+                    <nav onClick={onLinkClick}>
                         <Link href="/product/product-buyer">Produkt</Link>
                     </nav>
-                    <nav>
+                    <nav onClick={onLinkClick}>
                         <Link href="/#contact">Kontakt</Link>
                     </nav>
-                    <nav className="flex justify-center items-center w-52 h-10 rounded-3xl bg-blue text-white">
+                    <nav
+                        className="flex justify-center items-center w-52 h-10 rounded-3xl bg-blue text-white"
+                        onClick={onLinkClick}
+                    >
                         <Link href="http://live.colabu.cz/register">Registrovat se</Link>
                     </nav>
                 </div>
