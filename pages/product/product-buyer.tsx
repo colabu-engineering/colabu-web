@@ -6,6 +6,7 @@ import { SectionWrapper } from "../../components/section-wrapper";
 import { ItemWrapper } from "../../components/item-wrapper";
 import { ItemMargin } from "../../components/item-margin";
 import { SectionCustomers } from "../../components/section-customers";
+import { ItemTutorial } from "../../components/item-tutorial";
 
 const ProductBuyer: NextPage = () => {
     return (
@@ -32,10 +33,46 @@ const ProductBuyer: NextPage = () => {
                 </ItemMargin>
             </SectionWrapper>
 
-            <SectionWrapper className="bg-white">
+            <SectionWrapper className="bg-light-blue">
                 <ItemWrapper>
                     <h2 className="text-center text-2xl">Jak to funguje?</h2>
                 </ItemWrapper>
+
+                <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-4">
+                    <ItemMargin className="mt-0 lg:mx-2.5">
+                        <ItemTutorial
+                            title="1."
+                            iconPath="/buyer-tutorial-1.png"
+                            iconAlt="Buyer tutorial image"
+                            text="Zaregistrujete se do platformy Colabu."
+                        />
+                    </ItemMargin>
+                    <ItemMargin className="lg:mt-0 lg:mx-2.5 xl:mt-0">
+                        <ItemTutorial
+                            title="2."
+                            iconPath="/buyer-tutorial-2.png"
+                            iconAlt="Buyer tutorial image"
+                            text="Vyberete dodavatele od kterého chcete objednat zboží."
+                        />
+                    </ItemMargin>
+                    <ItemMargin className="xl:mt-0 lg:mx-2.5">
+                        <ItemTutorial
+                            title="3."
+                            iconPath="/buyer-tutorial-3.png"
+                            iconAlt="Buyer tutorial image"
+                            text="Vyberete si požadované zboží, vložíte jej do košíku a vytvoříte objednávku."
+                        />
+                    </ItemMargin>
+                    <ItemMargin className="xl:mt-0 lg:mx-2.5">
+                        <ItemTutorial
+                            title="4."
+                            iconPath="/buyer-tutorial-4.png"
+                            iconAlt="Buyer tutorial image"
+                            text="Stav vaší objednávky můžete sledovat v detailu objednávky."
+                        />
+                    </ItemMargin>
+                </div>
+
                 <ItemMargin>
                     <Button text="Registrovat se jako obchod" link="http://live.colabu.cz/register"/>
                 </ItemMargin>

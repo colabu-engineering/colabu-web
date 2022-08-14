@@ -2,7 +2,6 @@ import { NextPage } from "next";
 import { Button } from "../../components/button";
 import Image from "next/image";
 import { Box } from "../../components/box";
-import { CustomerLogo } from "../../components/customer-logo";
 import { SectionWrapper } from "../../components/section-wrapper";
 import { ItemWrapper } from "../../components/item-wrapper";
 import { ItemMargin } from "../../components/item-margin";
