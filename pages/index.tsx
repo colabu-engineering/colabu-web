@@ -7,6 +7,7 @@ import { CustomerLogo } from "../components/customer-logo";
 import { SectionWrapper } from "../components/section-wrapper";
 import { ItemWrapper } from "../components/item-wrapper";
 import { ItemMargin } from "../components/item-margin";
+import { SectionCustomers } from "../components/section-customers";
 
 const Home: NextPage = () => {
     return (
@@ -99,34 +100,7 @@ const Home: NextPage = () => {
                 </div>
             </SectionWrapper>
 
-            <SectionWrapper>
-                <ItemWrapper>
-                    <h2 className="text-center text-2xl">Spolupracují s námi</h2>
-                </ItemWrapper>
-                <div className="flex flex-col items-center lg:flex-row">
-                    <ItemMargin className="lg:mx-2.5">
-                        <CustomerLogo
-                            iconPath="/no-sacek-logo.png"
-                            iconAlt="Nosacek logo"
-                        />
-                    </ItemMargin>
-                    <ItemMargin className="lg:mx-2.5">
-                        <CustomerLogo
-                            iconPath="/janek-logo.png"
-                            iconAlt="Čokoládovna Janek logo"
-                        />
-                    </ItemMargin>
-                    <ItemMargin className="lg:mx-2.5">
-                        <CustomerLogo
-                            iconPath="/nasypsi-logo.png"
-                            iconAlt="Nasypsi logo"
-                        />
-                    </ItemMargin>
-                </div>
-                <ItemMargin>
-                    <Button text="Začít spolupracovat" link="mailto:info@colabu.cz"/>
-                </ItemMargin>
-            </SectionWrapper>
+            <SectionCustomers/>
 
             <SectionWrapper className="bg-dark-blue lg:flex-row lg:justify-center lg:items-start">
                 <div className="lg:mr-10">
