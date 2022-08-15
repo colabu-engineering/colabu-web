@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export const Footer = () => {
     return (
-        <footer className="w-full lg:flex lg:justify-around md:pb-5">
+        <footer className="w-full lg:flex lg:justify-around py-5">
             <section className="flex w-full justify-center flex-col lg:flex-row lg:w-auto">
                 <div className="flex justify-center items-center">
                     <Image src="/envelope.svg" alt="Envelope icon" width="24" height="24"/>
@@ -24,7 +24,7 @@ export const Footer = () => {
                 </div>
             </section>
 
-            <section className="flex w-full justify-center py-5 lg:py-0 lg:w-auto">
+            <section className="flex w-full justify-center pt-5 lg:py-0 lg:w-auto">
                 <div className="mx-2.5">
                     <a href="https://www.facebook.com/ColabuCZ" target="_blank">
                         <Image src="/facebook.svg" alt="Facebook icon" width="24" height="24"/>

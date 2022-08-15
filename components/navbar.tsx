@@ -1,34 +1,36 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
 export const Navbar = () => {
     const [isNavOpen, setIsNavOpen] = useState(false);
-    const onLinkClick = () => setIsNavOpen(false);
+    const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+    const onMobileLinkClick = () => setIsNavOpen(false);
+    const onDesktopLinkClick = () => setIsDropdownOpen(false);
 
     return (
         <header className="flex w-full">
             <section className="flex w-full pt-5 px-5 md:hidden">
-                <div>
+                <div className="z-30">
                     <Image src="/colabu-logo.png" alt="Colabu logo" width="120" height="25"/>
                 </div>
 
                 <div
                     className={`${isNavOpen ? "show-menu" : "hide-menu"} flex flex-col items-center justify-between min-h-[250px]`}
                 >
-                    <nav onClick={onLinkClick}>
+                    <nav onClick={onMobileLinkClick}>
                         <Link href="/">Domů</Link>
                     </nav>
-                    <nav onClick={onLinkClick}>
-                        <Link href="/product/product-buyer">Produkt</Link>
+                    <nav onClick={onMobileLinkClick}>
+                        <Link href="/product/product-buyer">Pro obchod</Link>
                     </nav>
-                    <nav onClick={onLinkClick}>
+                    <nav onClick={onMobileLinkClick}>
+                        <Link href="/product/product-supplier">Pro dodavatele</Link>
+                    </nav>
+                    <nav onClick={onMobileLinkClick}>
                         <Link href="/#contact">Kontakt</Link>
                     </nav>
-                    <nav
-                        className="flex justify-center items-center w-52 h-10 rounded-3xl bg-blue text-white"
-                        onClick={onLinkClick}
-                    >
+                    <nav className="flex justify-center items-center w-52 h-10 rounded-3xl bg-blue text-white">
                         <Link href="http://live.colabu.cz/register">Registrovat se</Link>
                     </nav>
                 </div>
@@ -70,17 +72,34 @@ export const Navbar = () => {
 
                 <div className="flex items-center">
                     <div className="mx-5">
-                        <nav>
+                        <nav onClick={onDesktopLinkClick}>
                             <Link href="/">Domů</Link>
                         </nav>
                     </div>
-                    <div className="mx-5">
-                        <nav>
-                            <Link href="/product/product-buyer">Produkt</Link>
-                        </nav>
+                    <div className="mx-5 relative">
+                        <div
+                            className="flex items-center cursor-pointer"
+                            onClick={() => setIsDropdownOpen((prev) => !prev)}
+                        >
+                            <span>Produkt</span>
+                            <div className={`${isDropdownOpen ? "rotate-90" : ""} ml-2.5 transition flex`}>
+                                <Image src="/arrow.png" alt="Icon arrow" width={7} height={10}/>
+                            </div>
+                        </div>
+                        <div
+                            className={`${isDropdownOpen ? "flex" : "hidden"} w-36 h-20 bg-white rounded-2xl shadow absolute top-8 right-0 flex-col justify-center items-center`}>
+                            <div className="text-left h-full flex flex-col justify-around py-2">
+                                <nav onClick={onDesktopLinkClick}>
+                                    <Link href="/product/product-buyer">Pro obchod</Link>
+                                </nav>
+                                <nav onClick={onDesktopLinkClick}>
+                                    <Link href="/product/product-supplier">Pro dodavatele</Link>
+                                </nav>
+                            </div>
+                        </div>
                     </div>
                     <div className="mx-5">
-                        <nav>
+                        <nav onClick={onDesktopLinkClick}>
                             <Link href="/#contact">Kontakt</Link>
                         </nav>
                     </div>
