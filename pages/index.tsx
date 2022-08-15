@@ -3,7 +3,6 @@ import { Button } from "../components/button";
 import Image from "next/image";
 import { Box } from "../components/box";
 import { ContactForm } from "../components/contact-form";
-import { CustomerLogo } from "../components/customer-logo";
 import { SectionWrapper } from "../components/section-wrapper";
 import { ItemWrapper } from "../components/item-wrapper";
 import { ItemMargin } from "../components/item-margin";
@@ -14,7 +13,7 @@ const Home: NextPage = () => {
         <>
             <SectionWrapper>
                 <ItemWrapper>
-                    <h1 className="text-center text-4xl">
+                    <h1 className="text-center font-sans-medium text-4xl">
                         <span className="text-blue">Efektivní řešení</span> pro správu vašeho zboží.
                     </h1>
                 </ItemWrapper>
@@ -36,7 +35,7 @@ const Home: NextPage = () => {
 
             <SectionWrapper className="bg-white">
                 <ItemWrapper className="lg:hidden">
-                    <h2 className="text-center text-2xl">Přehlednost a efektivita procesu při objednávání zboží.</h2>
+                    <h2 className="text-center font-sans-medium text-2xl">Přehlednost a efektivita procesu při objednávání zboží.</h2>
                 </ItemWrapper>
 
                 <div className="flex flex-col items-center lg:flex-row lg:items-start">
@@ -50,7 +49,7 @@ const Home: NextPage = () => {
 
                     <ItemWrapper className="lg:ml-10">
                         <div className="hidden lg:block">
-                            <h2 className="text-center text-2xl lg:text-left">
+                            <h2 className="text-center font-sans-medium text-2xl lg:text-left">
                                 Přehlednost a efektivita procesu při objednávání zboží.
                             </h2>
                         </div>
@@ -74,7 +73,7 @@ const Home: NextPage = () => {
 
             <SectionWrapper className="bg-blue">
                 <ItemWrapper>
-                    <h2 className="text-center text-2xl text-white">Colabu přináší řešení</h2>
+                    <h2 className="text-center font-sans-medium text-2xl text-white">Colabu přináší řešení</h2>
                 </ItemWrapper>
                 <div className="flex flex-col items-center lg:flex-row">
                     <ItemMargin className="lg:mx-2.5">
@@ -105,7 +104,7 @@ const Home: NextPage = () => {
             <SectionWrapper className="bg-dark-blue lg:flex-row lg:justify-center lg:items-start">
                 <div className="lg:mr-10">
                     <ItemWrapper className="mt-5 lg:mt-0">
-                        <h2 className="text-center text-2xl text-white lg:text-left">Kdo stojí za Colabu?</h2>
+                        <h2 className="text-center font-sans-medium text-2xl text-white lg:text-left">Kdo stojí za Colabu?</h2>
                     </ItemWrapper>
                     <ItemWrapper className="mt-5">
                         <p className="text-center text-white lg:text-left">
@@ -126,9 +125,9 @@ const Home: NextPage = () => {
 
             <SectionWrapper id="contact">
                 <ItemWrapper>
-                    <h2 className="text-center text-2xl">Napíšte nám</h2>
+                    <h2 className="text-center font-sans-medium text-2xl">Napíšte nám</h2>
                 </ItemWrapper>
-                <ItemWrapper>
+                <ItemWrapper className="mt-5">
                     <p className="text-center">Máte nějaké otázky? Rádi vám vše zodpovíme!</p>
                 </ItemWrapper>
                 <ItemWrapper className="mt-5">

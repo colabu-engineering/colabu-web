@@ -1,3 +1,33 @@
+@font-face {
+    font-family: 'WorkSans';
+    src: url('../assets/WorkSans-Regular.ttf');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'WorkSans-Thin';
+    src: url('../assets/WorkSans-Thin.ttf');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'WorkSans-Italic';
+    src: url('../assets/WorkSans-Italic.ttf');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'WorkSans-Medium';
+    src: url('../assets/WorkSans-Medium.ttf');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'WorkSans-Bold';
+    src: url('../assets/WorkSans-Bold.ttf');
+    font-style: normal;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

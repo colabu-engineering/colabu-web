@@ -10,7 +10,7 @@ export interface ItemTutorialProps {
 }
 
 export const ItemTutorial: React.FC<ItemTutorialProps> = ({ title, iconPath, iconAlt, text }) => (
-    <div className="flex flex-col w-80 items-center bg-light-blue rounded-2xl">
+    <div className="flex flex-col w-80 items-center bg-light-blue rounded-2xl shadow">
         <div className="h-24">
             <div className="flex flex-col items-center">
                 <ItemMargin>

@@ -14,6 +14,13 @@ module.exports = {
                 'white': '#ffffff',
                 'grey': '#E7EAE8'
             },
+            fontFamily: {
+                'sans': ['WorkSans', 'sans-serif'],
+                'sans-thin': ['WorkSans-Thin', 'sans-serif'],
+                'sans-italic': ['WorkSans-Italic', 'sans-serif'],
+                'sans-medium': ['WorkSans-Medium', 'sans-serif'],
+                'sans-bold': ['WorkSans-Bold', 'sans-serif'],
+            }
         },
     },
     plugins: [

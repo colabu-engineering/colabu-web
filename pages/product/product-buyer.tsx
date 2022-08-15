@@ -14,7 +14,7 @@ const ProductBuyer: NextPage = () => {
         <>
             <SectionWrapper>
                 <ItemWrapper>
-                    <h1 className="text-center text-4xl">
+                    <h1 className="text-center font-sans-medium text-4xl">
                         Efektivní řešení <span className="text-blue">pro obchody</span>.
                     </h1>
                 </ItemWrapper>
@@ -36,7 +36,7 @@ const ProductBuyer: NextPage = () => {
 
             <SectionWrapper className="bg-light-blue">
                 <ItemWrapper>
-                    <h2 className="text-center text-2xl">Jak to funguje?</h2>
+                    <h2 className="text-center font-sans-medium text-2xl">Jak to funguje?</h2>
                 </ItemWrapper>
 
                 <div className="grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-4">
@@ -81,7 +81,7 @@ const ProductBuyer: NextPage = () => {
 
             <SectionWrapper>
                 <ItemWrapper>
-                    <h2 className="text-center text-2xl">Proč používat Colabu?</h2>
+                    <h2 className="text-center font-sans-medium text-2xl">Proč používat Colabu?</h2>
                 </ItemWrapper>
 
                 <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3">
@@ -140,7 +140,7 @@ const ProductBuyer: NextPage = () => {
 
             <SectionWrapper className="bg-blue">
                 <ItemWrapper>
-                    <h2 className="text-center text-2xl text-white">Colabu přináší řešení</h2>
+                    <h2 className="text-center font-sans-medium text-2xl text-white">Colabu přináší řešení</h2>
                 </ItemWrapper>
                 <div className="flex flex-col items-center lg:flex-row">
                     <ItemMargin className="lg:mx-2.5">
