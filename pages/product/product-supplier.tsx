@@ -24,7 +24,7 @@ const ProductSupplier: NextPage = () => {
                     </p>
                 </ItemWrapper>
                 <ItemMargin>
-                    <Button text="Registrovat se jako obchod" link="http://live.colabu.cz/register"/>
+                    <Button text="Registrovat se jako dodavatel" link="http://live.colabu.cz/register"/>
                 </ItemMargin>
                 <ItemMargin className="lg:hidden">
                     <Image src="/supplier-image.png" alt="Supplier image" width="190" height="190"/>
@@ -138,10 +138,7 @@ const ProductSupplier: NextPage = () => {
 
             <SectionCustomers/>
 
-            <SectionWrapper className="bg-blue">
-                <ItemWrapper>
-                    <h2 className="text-center font-sans-medium text-2xl text-white">Colabu přináší řešení</h2>
-                </ItemWrapper>
+            <SectionWrapper className="colabu-linear-gradient bg-blue">
                 <div className="flex flex-col items-center lg:flex-row">
                     <ItemMargin className="lg:mx-2.5">
                         <Box

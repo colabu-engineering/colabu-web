@@ -20,6 +20,10 @@ module.exports = {
                 'sans-italic': ['WorkSans-Italic', 'sans-serif'],
                 'sans-medium': ['WorkSans-Medium', 'sans-serif'],
                 'sans-bold': ['WorkSans-Bold', 'sans-serif'],
+            },
+            fontSize: {
+                '2xl': '32px',
+                '4xl': '40px'
             }
         },
     },

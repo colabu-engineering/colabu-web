@@ -12,7 +12,7 @@ export const ItemFeature: React.FC<ItemFeatureProps> = ({ title, iconPath, iconA
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <div className="w-80 rounded-2xl bg-white shadow">
+        <div className="w-80 lg:min-h-[360px] rounded-2xl bg-white shadow">
             <div className="flex justify-between">
                 <div
                     className="flex max-w-[140px] cursor-pointer items-center ml-5 lg:cursor-auto"

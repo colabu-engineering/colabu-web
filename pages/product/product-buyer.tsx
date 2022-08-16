@@ -90,7 +90,7 @@ const ProductBuyer: NextPage = () => {
                             title="Vytvoření objednávky"
                             iconPath="/buyer-feature-1.png"
                             iconAlt="Buyer feature icon"
-                            text="Díky Colabu dokážete objednávat zboží od různých dodavatelů na jednom místě*. Vytvoření objednávky je jednoduché a zvládnete jej na pár kliků."
+                            text="Díky Colabu dokážete objednávat zboží od různých dodavatelů na jednom místě. Vytvoření objednávky je jednoduché a zvládnete jej na pár kliků."
                         />
                     </ItemMargin>
                     <ItemMargin className="lg:mx-2.5">
@@ -106,7 +106,7 @@ const ProductBuyer: NextPage = () => {
                             title="Seznam dodavatelů"
                             iconPath="/buyer-feature-3.png"
                             iconAlt="Buyer feature icon"
-                            text="Chcete najít své ověřené dodavatele nebo získat nové? V seznamu dodavatelů jednoduše naleznete toho, kterého potřebujete.*"
+                            text="Chcete najít své ověřené dodavatele nebo získat nové? V seznamu dodavatelů jednoduše naleznete toho, kterého potřebujete."
                         />
                     </ItemMargin>
                     <ItemMargin className="lg:mx-2.5">
@@ -122,7 +122,7 @@ const ProductBuyer: NextPage = () => {
                             title="Monitorování objednávek"
                             iconPath="/buyer-feature-5.png"
                             iconAlt="Buyer feature icon"
-                            text="Colabu nabízí sledování stavů vašich objednávek. Poté, co objednávku v Colabu vytvoříte, máte neustálý přehled o jejím stavu.*"
+                            text="Colabu nabízí sledování stavů vašich objednávek. Poté, co objednávku v Colabu vytvoříte, máte neustálý přehled o jejím stavu."
                         />
                     </ItemMargin>
                     <ItemMargin className="lg:mx-2.5">
@@ -130,7 +130,7 @@ const ProductBuyer: NextPage = () => {
                             title="Chytrá pokladna"
                             iconPath="/buyer-feature-6.png"
                             iconAlt="Buyer feature icon"
-                            text="Objednejte zboží najednou nebo jednotlivě. Chytrá pokladna monitoruje splnění podmínek pro minimálnu objednávku a zobrazuje závozové dny.*"
+                            text="Objednejte zboží najednou nebo jednotlivě. Chytrá pokladna monitoruje splnění podmínek pro minimálnu objednávku a zobrazuje závozové dny."
                         />
                     </ItemMargin>
                 </div>
@@ -138,10 +138,7 @@ const ProductBuyer: NextPage = () => {
 
             <SectionCustomers/>
 
-            <SectionWrapper className="bg-blue">
-                <ItemWrapper>
-                    <h2 className="text-center font-sans-medium text-2xl text-white">Colabu přináší řešení</h2>
-                </ItemWrapper>
+            <SectionWrapper className="colabu-linear-gradient bg-blue">
                 <div className="flex flex-col items-center lg:flex-row">
                     <ItemMargin className="lg:mx-2.5">
                         <Box

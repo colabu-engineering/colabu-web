@@ -13,7 +13,7 @@ export interface BoxProps {
 }
 
 export const Box: React.FC<BoxProps> = ({ iconPath, iconAlt, title, text, buttonLink, buttonText }) => (
-    <div className="flex flex-col w-80 h-72 items-center rounded-2xl bg-white shadow-2xl">
+    <div className="flex flex-col w-80 lg:w-[480px] h-80 lg:h-[380px] items-center justify-center rounded-2xl bg-white shadow">
         <div className="flex flex-col items-center">
             <ItemMargin>
                 <Image src={iconPath} alt={iconAlt} width={32} height={32}/>

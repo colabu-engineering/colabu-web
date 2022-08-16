@@ -12,7 +12,9 @@ export const Navbar = () => {
         <header className="flex w-full">
             <section className="flex w-full pt-5 px-5 md:hidden">
                 <div className="z-30">
-                    <Image src="/colabu-logo.png" alt="Colabu logo" width="120" height="25"/>
+                    <a href="https://www.colabu.cz">
+                        <Image src="/colabu-logo.png" alt="Colabu logo" width="120" height="25"/>
+                    </a>
                 </div>
 
                 <div
@@ -30,8 +32,14 @@ export const Navbar = () => {
                     <nav onClick={onMobileLinkClick}>
                         <Link href="/#contact">Kontakt</Link>
                     </nav>
-                    <nav className="flex justify-center items-center w-52 h-10 rounded-3xl bg-blue text-white">
-                        <Link href="http://live.colabu.cz/register">Registrovat se</Link>
+                    <nav className="flex justify-center items-center w-52 h-12 rounded-3xl bg-blue text-white">
+                        {/*Hack to have clickable the whole button*/}
+                        <a
+                            href="http://live.colabu.cz/register"
+                            className="flex w-full h-full justify-center items-center"
+                        >
+                            Registrovat se
+                        </a>
                     </nav>
                 </div>
 
@@ -66,8 +74,10 @@ export const Navbar = () => {
             </section>
 
             <section className="hidden md:flex md:w-full md:justify-between md:px-20 md:pt-5">
-                <div className="flex items-center">
-                    <Image src="/colabu-logo.png" alt="Colabu logo" width="120" height="25"/>
+                <div className="flex items-center cursor-pointer">
+                    <a href="https://www.colabu.cz">
+                        <Image src="/colabu-logo.png" alt="Colabu logo" width="120" height="25"/>
+                    </a>
                 </div>
 
                 <div className="flex items-center">
@@ -104,8 +114,14 @@ export const Navbar = () => {
                         </nav>
                     </div>
                     <div className="ml-5">
-                        <nav className="flex justify-center items-center w-52 h-10 rounded-3xl bg-blue text-white">
-                            <Link href="http://live.colabu.cz/register">Registrovat se</Link>
+                        <nav className="flex justify-center items-center w-52 h-12 rounded-3xl bg-blue text-white">
+                            {/*Hack to have clickable the whole button*/}
+                            <a
+                                href="http://live.colabu.cz/register"
+                                className="flex w-full h-full justify-center items-center"
+                            >
+                                Registrovat se
+                            </a>
                         </nav>
                     </div>
                 </div>

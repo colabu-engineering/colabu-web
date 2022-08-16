@@ -25,26 +25,28 @@ const Home: NextPage = () => {
                 <ItemMargin>
                     <Button text="Začít spolupracovat" link="mailto:info@colabu.cz"/>
                 </ItemMargin>
-                <ItemMargin className="lg:hidden">
-                    <Image src="/product-mobile.png" alt="Product showcase" width="300" height="180"/>
+                <ItemMargin className="lg:hidden mt-10">
+                    <Image src="/product.png" alt="Product showcase" width="300" height="180"/>
                 </ItemMargin>
-                <ItemMargin className="hidden lg:block">
-                    <Image src="/product-mobile.png" alt="Product showcase" width="630" height="420"/>
+                {/*For unknown reason, I had to add rounded to both ItemMargin and Image components*/}
+                <ItemMargin className="hidden lg:block shadow rounded-2xl mt-10">
+                    <Image src="/product.png" alt="Product showcase" width="630" height="350" className="rounded-2xl"/>
                 </ItemMargin>
             </SectionWrapper>
 
             <SectionWrapper className="bg-white">
                 <ItemWrapper className="lg:hidden">
-                    <h2 className="text-center font-sans-medium text-2xl">Přehlednost a efektivita procesu při objednávání zboží.</h2>
+                    <h2 className="text-center font-sans-medium text-2xl">Přehlednost a efektivita procesu při
+                        objednávání zboží.</h2>
                 </ItemWrapper>
 
                 <div className="flex flex-col items-center lg:flex-row lg:items-start">
                     <ItemMargin className="lg:hidden">
-                        <Image src="/comparison.png" alt="Comparison image" width="280" height="160"/>
+                        <Image src="/comparison.png" alt="Comparison image" width="280" height="130"/>
                     </ItemMargin>
 
                     <div className="hidden lg:block lg:mr-10">
-                        <Image src="/comparison.png" alt="Comparison image" width="467" height="265"/>
+                        <Image src="/comparison.png" alt="Comparison image" width="467" height="220"/>
                     </div>
 
                     <ItemWrapper className="lg:ml-10">
@@ -71,9 +73,9 @@ const Home: NextPage = () => {
                 </div>
             </SectionWrapper>
 
-            <SectionWrapper className="bg-blue">
+            <SectionWrapper className="colabu-linear-gradient bg-blue">
                 <ItemWrapper>
-                    <h2 className="text-center font-sans-medium text-2xl text-white">Colabu přináší řešení</h2>
+                    <h2 className="text-center font-sans-medium text-2xl text-white lg:text-black">Colabu přináší řešení</h2>
                 </ItemWrapper>
                 <div className="flex flex-col items-center lg:flex-row">
                     <ItemMargin className="lg:mx-2.5">
@@ -104,7 +106,8 @@ const Home: NextPage = () => {
             <SectionWrapper className="bg-dark-blue lg:flex-row lg:justify-center lg:items-start">
                 <div className="lg:mr-10">
                     <ItemWrapper className="mt-5 lg:mt-0">
-                        <h2 className="text-center font-sans-medium text-2xl text-white lg:text-left">Kdo stojí za Colabu?</h2>
+                        <h2 className="text-center font-sans-medium text-2xl text-white lg:text-left">Kdo stojí za
+                            Colabu?</h2>
                     </ItemWrapper>
                     <ItemWrapper className="mt-5">
                         <p className="text-center text-white lg:text-left">

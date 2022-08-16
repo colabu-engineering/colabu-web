@@ -62,3 +62,9 @@ html {
         align-items: center;
     }
 }
+
+@media (min-width: 1024px) {
+    .colabu-linear-gradient {
+        background: linear-gradient(0deg, #306BDD 50%, #fff 50%);
+    }
+}
