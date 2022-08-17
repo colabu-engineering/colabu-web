@@ -12,29 +12,35 @@ import { ItemFeature } from "../../components/item-feature";
 const ProductSupplier: NextPage = () => {
     return (
         <>
-            <SectionWrapper>
-                <ItemWrapper>
-                    <h1 className="text-center font-sans-medium text-4xl">
-                        Efektivní řešení <span className="text-blue">pro dodavatele</span>.
-                    </h1>
-                </ItemWrapper>
-                <ItemWrapper className="mt-5">
-                    <p className="text-center">
-                        Získejte nové zákazníky a správu vašich produktů z jednoho místa díky modernímu nástroji Colabu.
-                    </p>
-                </ItemWrapper>
-                <ItemMargin>
-                    <Button text="Registrovat se jako dodavatel" link="http://live.colabu.cz/register"/>
-                </ItemMargin>
-                <ItemMargin className="lg:hidden">
-                    <Image src="/supplier-image.png" alt="Supplier image" width="190" height="190"/>
-                </ItemMargin>
-                <ItemMargin className="hidden lg:block">
-                    <Image src="/supplier-image.png" alt="Supplier image" width="256" height="256"/>
-                </ItemMargin>
+            <SectionWrapper className="lg:flex lg:flex-row lg:justify-center">
+                <div className="flex flex-col items-center lg:mx-10 lg:items-start">
+                    <ItemWrapper className="mt-20 md:mt-28 text-center lg:text-left">
+                        <h1 className="font-sans-medium text-4xl">
+                            Efektivní řešení <span className="text-blue">pro dodavatele</span>.
+                        </h1>
+                    </ItemWrapper>
+                    <ItemWrapper className="mt-5 text-center lg:text-left">
+                        <p>
+                            Získejte nové zákazníky a správu vašich produktů z jednoho místa díky modernímu nástroji
+                            Colabu.
+                        </p>
+                    </ItemWrapper>
+                    <ItemMargin>
+                        <Button text="Registrovat se jako dodavatel" link="http://live.colabu.cz/register"/>
+                    </ItemMargin>
+                </div>
+
+                <div className="flex flex-col items-center lg:mx-10 lg:mt-28">
+                    <ItemMargin className="lg:hidden">
+                        <Image src="/supplier-image.png" alt="Supplier image" width="190" height="190"/>
+                    </ItemMargin>
+                    <ItemMargin className="hidden lg:block">
+                        <Image src="/supplier-image.png" alt="Supplier image" width="256" height="256"/>
+                    </ItemMargin>
+                </div>
             </SectionWrapper>
 
-            <SectionWrapper className="bg-white">
+            <SectionWrapper>
                 <ItemWrapper>
                     <h2 className="text-center font-sans-medium text-2xl">Jak to funguje?</h2>
                 </ItemWrapper>

@@ -9,8 +9,8 @@ export const Navbar = () => {
     const onDesktopLinkClick = () => setIsDropdownOpen(false);
 
     return (
-        <header className="flex w-full">
-            <section className="flex w-full pt-5 px-5 md:hidden">
+        <header className="flex w-full fixed z-30 bg-white">
+            <section className="flex w-full p-5 md:hidden">
                 <div className="z-30">
                     <a href="https://www.colabu.cz">
                         <Image src="/colabu-logo.png" alt="Colabu logo" width="120" height="25"/>
@@ -43,7 +43,7 @@ export const Navbar = () => {
                     </nav>
                 </div>
 
-                <div className="flex w-full justify-end">
+                <div className="flex w-full justify-end items-center">
                     <div
                         className={`${isNavOpen ? "hidden" : ""} space-y-1`}
                         onClick={() => setIsNavOpen((prev) => !prev)}
@@ -73,7 +73,7 @@ export const Navbar = () => {
                 </div>
             </section>
 
-            <section className="hidden md:flex md:w-full md:justify-between md:px-20 md:pt-5">
+            <section className="hidden md:flex md:w-full md:justify-between md:px-20 md:py-5">
                 <div className="flex items-center cursor-pointer">
                     <a href="https://www.colabu.cz">
                         <Image src="/colabu-logo.png" alt="Colabu logo" width="120" height="25"/>

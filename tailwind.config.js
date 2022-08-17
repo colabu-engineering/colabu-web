@@ -24,7 +24,7 @@ module.exports = {
             fontSize: {
                 '2xl': '32px',
                 '4xl': '40px'
-            }
+            },
         },
     },
     plugins: [

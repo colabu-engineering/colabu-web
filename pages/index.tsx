@@ -12,7 +12,7 @@ const Home: NextPage = () => {
     return (
         <>
             <SectionWrapper>
-                <ItemWrapper>
+                <ItemWrapper className="mt-20 md:mt-28">
                     <h1 className="text-center font-sans-medium text-4xl">
                         <span className="text-blue">Efektivní řešení</span> pro správu vašeho zboží.
                     </h1>
@@ -34,7 +34,7 @@ const Home: NextPage = () => {
                 </ItemMargin>
             </SectionWrapper>
 
-            <SectionWrapper className="bg-white">
+            <SectionWrapper>
                 <ItemWrapper className="lg:hidden">
                     <h2 className="text-center font-sans-medium text-2xl">Přehlednost a efektivita procesu při
                         objednávání zboží.</h2>
