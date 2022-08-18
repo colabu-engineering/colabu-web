@@ -12,7 +12,9 @@ import { ItemFeature } from "../../components/item-feature";
 const ProductSupplier: NextPage = () => {
     return (
         <>
-            <SectionWrapper className="lg:flex lg:flex-row lg:justify-center">
+            <SectionWrapper
+                className="lg:flex lg:flex-row lg:justify-center bg-vector-1 bg-no-repeat bg-left-5 bg-contain"
+            >
                 <div className="flex flex-col items-center lg:mx-10 lg:items-start">
                     <ItemWrapper className="mt-20 md:mt-28 text-center lg:text-left">
                         <h1 className="font-sans-medium text-4xl">

@@ -25,6 +25,16 @@ module.exports = {
                 '2xl': '32px',
                 '4xl': '40px'
             },
+            backgroundImage: {
+                'vector-1': "url('/vector-1.png')"
+            },
+            backgroundSize: {
+                '35%': '35%',
+                '65%': '65%',
+            },
+            backgroundPosition: {
+                'left-5': 'top left 4rem',
+            }
         },
     },
     plugins: [

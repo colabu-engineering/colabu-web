@@ -11,7 +11,7 @@ import { SectionCustomers } from "../components/section-customers";
 const Home: NextPage = () => {
     return (
         <>
-            <SectionWrapper>
+            <SectionWrapper className="bg-vector-1 bg-no-repeat bg-left-5 bg-contain md:bg-65%">
                 <ItemWrapper className="mt-20 md:mt-28">
                     <h1 className="text-center font-sans-medium text-4xl">
                         <span className="text-blue">Efektivní řešení</span> pro správu vašeho zboží.
