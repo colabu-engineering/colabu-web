@@ -28,7 +28,7 @@ const ProductSupplier: NextPage = () => {
                         </p>
                     </ItemWrapper>
                     <ItemMargin>
-                        <Button text="Registrovat se jako dodavatel" link="http://live.colabu.cz/register"/>
+                        <Button text="Registrovat se jako dodavatel" link="https://app.colabu.cz/register"/>
                     </ItemMargin>
                 </div>
 
@@ -83,7 +83,7 @@ const ProductSupplier: NextPage = () => {
                 </div>
 
                 <ItemMargin>
-                    <Button text="Registrovat se jako dodavatel" link="http://live.colabu.cz/register"/>
+                    <Button text="Registrovat se jako dodavatel" link="https://app.colabu.cz/register"/>
                 </ItemMargin>
             </SectionWrapper>
 
