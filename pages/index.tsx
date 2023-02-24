@@ -23,7 +23,7 @@ const Home: NextPage = () => {
                     </p>
                 </ItemWrapper>
                 <ItemMargin>
-                    <Button text="Začít spolupracovat" link="mailto:info@colabu.cz"/>
+                    <Button text="Začít spolupracovat" link="mailto:podpora@colabu.cz"/>
                 </ItemMargin>
                 <ItemMargin className="lg:hidden mt-10">
                     <Image src="/product.png" alt="Product showcase" width="300" height="180"/>

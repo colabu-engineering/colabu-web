@@ -7,7 +7,7 @@ export const Footer = () => {
                 <div className="flex justify-center items-center">
                     <Image src="/envelope.svg" alt="Envelope icon" width="24" height="24"/>
                     <div className="pl-3">
-                        <a href="mailto:info@colabu.cz">info@colabu.cz</a>
+                        <a href="mailto:podpora@colabu.cz">podpora@colabu.cz</a>
                     </div>
                 </div>
                 <div className="flex justify-center items-center mt-5 lg:mt-0 lg:ml-5">

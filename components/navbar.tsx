@@ -35,10 +35,10 @@ export const Navbar = () => {
                     <nav className="flex justify-center items-center w-52 h-12 rounded-3xl bg-blue text-white">
                         {/*Hack to have clickable the whole button*/}
                         <a
-                            href="https://app.colabu.cz/register"
+                            href="https://app.colabu.cz"
                             className="flex w-full h-full justify-center items-center"
                         >
-                            Registrovat se
+                            Přihlásit se
                         </a>
                     </nav>
                 </div>
@@ -117,10 +117,10 @@ export const Navbar = () => {
                         <nav className="flex justify-center items-center w-52 h-12 rounded-3xl bg-blue text-white">
                             {/*Hack to have clickable the whole button*/}
                             <a
-                                href="https://app.colabu.cz/register"
+                                href="https://app.colabu.cz"
                                 className="flex w-full h-full justify-center items-center"
                             >
-                                Registrovat se
+                                Přihlásit se
                             </a>
                         </nav>
                     </div>

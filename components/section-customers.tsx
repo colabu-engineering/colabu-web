@@ -31,7 +31,7 @@ export const SectionCustomers: React.FC = () => (
             </ItemMargin>
         </div>
         <ItemMargin>
-            <Button text="Začít spolupracovat" link="mailto:info@colabu.cz"/>
+            <Button text="Začít spolupracovat" link="mailto:podpora@colabu.cz"/>
         </ItemMargin>
     </SectionWrapper>
 );
