@@ -1959,6 +1959,24 @@ button:hover {
     width: 40px;
     padding-top: 10px;
 }
+
+.navbar-position {
+    justify-content: flex-end;
+}
+
+.button-active {
+    background: linear-gradient(to right, #0f7404, #5cb917);
+    border-radius: 3px;
+}
+
+@media screen and (max-width: 991px) {
+    .navbar-position {
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+}
 /*------------------------------------------*/
 /*CUSTOM STYLES PART END*/
 /*------------------------------------------*/
