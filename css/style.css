@@ -662,8 +662,9 @@ button:hover {
 /*BEST SELLER PART CSS START*/
 /*-------------------------------------------*/
 .full-bestSeller {
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 }
+
 .product {
     border: 2px solid #dcedd8;
     padding: 20px 10px;
@@ -738,22 +739,6 @@ button:hover {
     transition: all 0.3s;
     width: 200px;
     text-align: center;
-}
-
-.product:hover {
-    border: 2px solid #03262ceb;
-}
-
-.product:hover .product-content {
-    background-color: #03262ceb;
-}
-
-.product:hover .product-name a{
-    color: #fff;
-}
-
-.product:hover .icons {
-    opacity: 1;
 }
 
 /*-------------------------------------------*/
@@ -1130,6 +1115,12 @@ button:hover {
     padding: 30px;
     border-left: 2px solid #dcedd8;
     border-right: 2px solid #dcedd8;
+    border-bottom: 2px solid #dcedd8;
+}
+
+.news-img {
+    border-left: 2px solid #dcedd8;
+    border-top: 2px solid #dcedd8;
     border-bottom: 2px solid #dcedd8;
 }
 
@@ -1955,7 +1946,7 @@ button:hover {
 /*CUSTOM STYLES PART START*/
 /*------------------------------------------*/
 .navbar-brand {
-    width: 40px;
+    width: 80px;
     padding-top: 10px;
 }
 
@@ -1986,6 +1977,21 @@ button:hover {
         display: flex;
         flex-direction: column;
     }
+}
+
+.product-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    text-align: center;
+}
+
+.product-buttons {
+    margin: 10px 0;
+}
+
+.product-buttons .custom-btn {
+    background: transparent;
 }
 /*------------------------------------------*/
 /*CUSTOM STYLES PART END*/
