@@ -672,23 +672,6 @@ button:hover {
     transition: all 0.3s;
 }
 
-.product-content {
-    content: "";
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    background-color: #03262c00;
-    z-index: 1;
-    transition: all 0.3s;
-    border: 2px solid transparent;
-}
-
-.product-img {
-    margin-bottom: 70px;
-}
-
 .product-name a{
     font-size: 26px;
     font-weight: 600;
@@ -1982,7 +1965,14 @@ button:hover {
     display: flex;
     flex-direction: column;
     justify-content: end;
+    align-items: center;
     text-align: center;
+}
+
+.product-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .product-buttons {
@@ -1991,6 +1981,15 @@ button:hover {
 
 .product-buttons .custom-btn {
     background: transparent;
+}
+
+.section-title-partners {
+    margin-bottom: 20px;
+}
+
+.slick-track {
+    display: flex;
+    align-items: center;
 }
 /*------------------------------------------*/
 /*CUSTOM STYLES PART END*/
